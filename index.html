@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        .body{
+            border: 2px solid re;
+            margin: auto;
+            width: 980px;
+            background-color: whitesmoke;
+            word-wrap: break-word;
+            padding-top: 92px;
+            padding-bottom: 132px;
+            font-family: inherit;
+        }
+        .left
+        {
+            padding-right: 48px;
+            box-sizing: border-box;
+        }
+        .recent{
+            font-size: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c1e21;
+            line-height: 32px;
+            font-weight: 32px;
+            direction: ltr;
+            margin-top: 18px;
+        }
+        .profiles{
+            padding-right: 48px;
+            position: relative;
+            font-size: 12px;
+            
+        }
+        .logo {
+            width: 220px;
+            margin: -20px;
+        }
+        .acntoptns{
+            padding-bottom: 12px;
+            color: #606770;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 24px;
+            margin-bottom: 12px;
+            font-weight: normal;
+            display: block;
+        }
+        .account{
+            font-family: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            word-wrap: break-word;
+            font-size: 12px;
+
+        }
+        .btn {
+            font-family: inherit;
+            display: block;
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card-img-top {
+            align-items: center;
+            background-color: #f5f6f7;
+            display: flex;
+            justify-content: center;
+
+        }
+        .card {
+            transition: all .2s ease-out;
+        }
+        #card2 {
+            margin-left: 175px;
+            margin-top: -209px;
+        }
+        #btn2{
+            color: #1877f2;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 545;
+        }
+        #btn2:hover {
+            color: #606770;
+        }
+        .form-control {
+            width: 330px;
+            
+        }
+        #btn4{
+            margin-left: 35px;
+        }
+        .forgotten{
+            color: #1877f2;
+            text-align: center;
+            margin-left: 140px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .forms{
+            border-radius: 8px;
+            color: white;
+            padding-bottom: 28px;
+            margin-left: 550px;
+            margin-right: 200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+            height: 330px;
+            width: 396px;
+            padding-top: 20px;
+            margin-top: -290px;
+            
+            
+        }
+        .line {
+            align-items: center;
+            margin: 20px 16px;
+            border-bottom: 1px solid #dadde1;
+            display: flex;
+        }
+        .btn-success{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+        .form-control{
+            margin-left: -35px;
+        }
+        .link_page{
+            color: #1c1e21;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-left: 590px;
+            margin-top: 56px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+        .foot{
+            background-color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 280px;
+            margin-right: 20px;
+            margin-top: 120px;
+            color: #737373;
+            
+        }
+        .foot-body{
+            color: #737373;
+        }
+        .page :hover {
+            text-decoration: underline;
+        }
+        .text{
+            margin-top: 1px;
+            text-decoration: none;
+            color: #737373;
+            width: 80%;
+            text-align: center;
+        }
+        .foot-text{
+            color: #737373;
+            margin: 6px;
+            text-justify: auto;
+            font-size: smaller;
+            text-decoration: none;
+        }
+        .foottext :hover{
+            text-decoration: underline;
+        }
+        .sign{
+            color: #737373;
+            text-decoration: none;
+            margin: auto;
+        }
+        .break {
+            width: 58%;
+            margin: auto;
+        }
+        .line{
+            color: black;
+        }
+        .links{
+            width: 58%;
+            color: #606770;
+            margin: auto;
+        }
+        .link-text{
+            color: #606770;
+            text-decoration: none;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+        }
+        .below-foot :hover{
+            text-decoration: underline;
+        }
+        .img{
+            height: 158px;
+            text-decoration: none;
+            color: #1877f2;
+        }
+    </style>
+  </head>
+  <body style="background-color: whitesmoke;">
+    <div class="start">
+
+        <div class="body">
+            <div class="profiles">
+                <h1 class="logo"><img src="facebook logo1.svg" alt=""></h1>
+            </div>
+            <div class="left">
+                
+                <div class="recent">Recent Logins</div>
+                <div class="acntoptns">Click your picture or add an account.</div>
+                <div class="account"></div>
+                <div class="card" style="width: 160px;">
+                    <img src="lofi.webp " class="card-img-top img" alt="...">
+                    <div class="card-body btn">Saurash
+                        <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- <a href="#" class="btn">Saurash</a> -->
+        </div>
+    </div>
+    <div class="card" id="card2" style="width: 160px;">
+        <!-- <img src=",," class="card-img-top img" alt="..."> -->
+        <a href="#" class="card-img-top img"><span class="material-symbols-outlined">
+            add_circle
+            </span></a>
+        <div class="card-body btn" id="btn2">Add Account
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- <a href="#" class="btn">Saurash</a> -->
+        </div>
+    </div>
+    
+<div class="borer">
+    <div>
+        <form class="forms">
+            
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10"> 
+                    <input type="email" class="form-control" placeholder="Email address or phone number" id="inputEmail3">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 330px;" id="btn4" >Log in</button>
+                    <a href="..." class="forgotten">Forgotten password? </a>
+                    <hr class="line">
+                    <button type="button" style="margin: auto;" class="btn btn-success">Create a new account</button>
+                    
+                </div>
+                <div class="page"><a href="" class="link_page" >Create a Page</a>  for a celebrity, brand or business.</div>
+            </div>
+        </div>
+    </form>
+    
+</div>
+</div>
+<div>
+    
+    <footer class="foot">
+        <div class="foot-body">
+            <ul class="text foottext">
+                <a href="#" class="foot-text">English (UK)</a>
+                <a href="#" class="foot-text"> हिन्दी</a>
+                <a href="#" class="foot-text">ਪੰਜਾਬੀ</a>
+                <a href="#" class="foot-text">اردو</a>
+                <a href="#" class="foot-text">ગુજરાતી</a>
+                <a href="#" class="foot-text">मराठी</a>
+                <a href="#" class="foot-text">বাংলা</a>
+                <a href="#" class="foot-text">தமிழ்</a>
+                <a href="#" class="foot-text">తెలుగు</a>
+                <a href="#" class="foot-text">മലയാളം</a>
+                <a href="#" class="foot-text">ಕನ್ನಡ</a>
+                <span class="material-symbols-outlined plus">
+                    <a href="##" class="sign">
+                        add_box
+                    </a>
+                
+                    </span>
+            </ul>
+            <hr class="break">
+        </div>
+        <div class="links">
+            <ul class="below-foot">
+                <a href="##" class="link-text">sign up</a>
+                <a href="##" class="link-text">Log in</a>
+                <a href="##" class="link-text">Messanger</a>
+                <a href="##" class="link-text">Facebook Lite</a>
+                <a href="##" class="link-text">Watch</a>
+                <a href="##" class="link-text">Places</a>
+                <a href="##" class="link-text">Games</a>
+                <a href="##" class="link-text">Marketplace</a>
+                <a href="##" class="link-text">Meta Pay</a>
+                <a href="##" class="link-text">Meta store</a>
+                <a href="##" class="link-text">Meta Quest</a>
+                <a href="##" class="link-text">Instagram</a>
+                <a href="##" class="link-text">Bulletin</a>
+                <a href="##" class="link-text">Fundraisers</a>
+                <a href="##" class="link-text">Services</a>
+                <a href="##" class="link-text">Services</a>
+                <a href="##" class="link-text">Voting Information Centre</a>
+                <a href="##" class="link-text">Privacy Policy</a>
+                <a href="##" class="link-text">Privacy Center</a>
+                <a href="##" class="link-text">Groups</a>
+                <a href="##" class="link-text">About</a>
+                <a href="##" class="link-text">Create ad</a>
+                <a href="##" class="link-text">Create page</a>
+                <a href="##" class="link-text">Developers</a>
+                <a href="##" class="link-text">Careers</a>
+                <a href="##" class="link-text">Cookies</a>
+                <a href="##" class="link-text">AdChoices <a href="#"><span class="material-symbols-outlined">
+                    play_arrow
+                    </span></a></a>
+                <a href="##" class="link-text">Terms</a>
+                <a href="##" class="link-text">Help</a>
+                <a href="##" class="link-text">Contact uploading and non-users</a>
+                <!-- <a href="##" class="link-text"></a> -->
+            </ul>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
