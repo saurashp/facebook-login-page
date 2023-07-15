@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'facebookClone'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1FF9F1DA9EAA41188F8480FAD2AFCC6B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CA48AF11F52C4961BAE8786257A2D2CD }}
           package: .
